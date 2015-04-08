@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesjartun Camping</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+    <body>
+        
+        <header id="header">
+            <div class="container">
+                <img src="@Url.Content("~/Content/gfx/Fiskemann.png")" class="hidden-xs" />
+                <div class="header-inner">
+                    <h1>Nesjartun Camping</h1>
+
+                    <p>Nesjartun Camping er ei lita familiedriven bedrift ved enden av Hornindalsvatnet. Plassen ligg ved Rv15/E39, ca. 8 km fra Nordfjordeid i retning Stryn. Vi tilbyr hytter, plass til telt, vogner og bubilar og utleige av båtar.</p>
+                    <p>På Nesjartun bur du midt i Nordfjord, ein ideell stad for dagsturar i alle retningar, Måløy, Selje og Vestkapp, Stryn og Briksdalen, Geiranger, Ålesund og Runde for å nemne nokre.</p>
+
+                </div>
+            </div>
+        </header>
+        
+        <div class="container">
+            @RenderBody()
+        </div>
+        
+        <div class="container">
+            <footer>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <p>
+                            Nesjartun Camping <br />
+                            Nes <br />
+                            6770 Nordfjordeid
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <p>
+                            <a href="mailto:post@nesjartun.no">post@nesjartun.no</a> <br />
+                            Magne: <a href="callto:004791602732">91602732</a> <br />
+                            Karin: <a href="callto:004790635695">90635695</a>
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/jqueryval")
+        @Scripts.Render("~/bundles/bootstrap")
+        @Scripts.Render("~/bundles/js")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>

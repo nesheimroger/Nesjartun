@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nesjartun.Web", "Nesjartun.Web\Nesjartun.Web.csproj", "{8DEBF9FC-4D7F-4180-95FE-80DFDFC024DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nesjartun.Models", "Nesjartun.Models\Nesjartun.Models.csproj", "{CC016C07-C215-46E3-92F9-9D9342C9817E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.0 Presentation", "1.0 Presentation", "{E9300CD9-5BE5-433A-A2C6-7AB797B6C50E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0 Application", "2.0 Application", "{B7304D3D-4477-4F3F-8C80-F9B6E5D4EE97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{00E15E98-62A7-469A-B850-9336B12BF907}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nesjartun.Contact", "Nesjartun.Contact\Nesjartun.Contact.csproj", "{A372827D-5C72-4A79-BB55-955CFC0FF335}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nesjartun.Utility", "Nesjartun.Utility\Nesjartun.Utility.csproj", "{C3C429AD-92ED-42A1-B53D-1E2E96390EA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DEBF9FC-4D7F-4180-95FE-80DFDFC024DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DEBF9FC-4D7F-4180-95FE-80DFDFC024DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DEBF9FC-4D7F-4180-95FE-80DFDFC024DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DEBF9FC-4D7F-4180-95FE-80DFDFC024DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC016C07-C215-46E3-92F9-9D9342C9817E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC016C07-C215-46E3-92F9-9D9342C9817E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC016C07-C215-46E3-92F9-9D9342C9817E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC016C07-C215-46E3-92F9-9D9342C9817E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A372827D-5C72-4A79-BB55-955CFC0FF335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A372827D-5C72-4A79-BB55-955CFC0FF335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A372827D-5C72-4A79-BB55-955CFC0FF335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A372827D-5C72-4A79-BB55-955CFC0FF335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3C429AD-92ED-42A1-B53D-1E2E96390EA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3C429AD-92ED-42A1-B53D-1E2E96390EA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3C429AD-92ED-42A1-B53D-1E2E96390EA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3C429AD-92ED-42A1-B53D-1E2E96390EA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8DEBF9FC-4D7F-4180-95FE-80DFDFC024DC} = {E9300CD9-5BE5-433A-A2C6-7AB797B6C50E}
+		{CC016C07-C215-46E3-92F9-9D9342C9817E} = {00E15E98-62A7-469A-B850-9336B12BF907}
+		{00E15E98-62A7-469A-B850-9336B12BF907} = {B7304D3D-4477-4F3F-8C80-F9B6E5D4EE97}
+		{A372827D-5C72-4A79-BB55-955CFC0FF335} = {B7304D3D-4477-4F3F-8C80-F9B6E5D4EE97}
+		{C3C429AD-92ED-42A1-B53D-1E2E96390EA6} = {00E15E98-62A7-469A-B850-9336B12BF907}
+	EndGlobalSection
+EndGlobal

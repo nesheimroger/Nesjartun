@@ -1,0 +1,22 @@
+﻿@model Nesjartun.Models.ContactModel
+           
+<div class="form-group">
+    @Html.LabelFor(x => x.Name, "Navn")
+    @Html.TextBoxFor(x => x.Name, new{@class="form-control"})
+</div>
+<div class="row">
+    <div class="form-group col-xs-12 col-sm-6">
+        @Html.LabelFor(x => x.Phone, "Telefon")
+        @Html.TextBoxFor(x => x.Phone, new { @class = "form-control" })
+    </div>
+    <div class="form-group col-xs-12 col-sm-6">
+        @Html.LabelFor(x => x.Email, "E-Post")
+        @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+    </div>
+</div>
+    
+<div class="form-group">
+    @Html.LabelFor(x => x.Message, "Melding")
+    @Html.TextAreaFor(x => x.Message, new { @class = "form-control", rows = 4 })
+</div>
+    
