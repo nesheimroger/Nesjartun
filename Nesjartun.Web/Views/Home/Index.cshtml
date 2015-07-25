@@ -1,0 +1,66 @@
+﻿<section id="cabins" class="content-section">
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-8">
+            <h2>Hytter</h2>
+            <p>På camping plassen har vi 11 hytter i ulik størelse og standard. Alle hyttene har kjøleskap og kokeplater. Det er ikkje dyner, puter eller sengkle i hyttene, men dyner og puter kan leigast.Vi har engangssengekle til salgs.</p>
+            <p>Hytter med adskilt soverom for 2-3 personar. Køyseng i opphaldsrom. Kjøkkenkrok med innlagt vatn. Bad med dusj og toalett.</p>
+            <p>Enkle eitt-romshytter for 4 personar utan vatn, dusj og WC. Køysenger, kokeplate og kjøleskap.</p>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <h3>Priser pr. døgn:</h3>
+            <dl>
+                <dt>Enkel ettromshytte</dt>
+                <dd>400,-</dd>
+                <dt>To-roms hytte m/innlagt kaldt vatn</dt>
+                <dd>550,-</dd>
+                <dt>To roms hytte m/dusj og toalett</dt>
+                <dd>700,-</dd>
+            </dl>
+        </div>
+    </div>
+</section>
+
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+        <section id="camping" class="content-section">
+            <h2>Bil/Vogn/Telt</h2>
+            <p>På campingplassen har vi plass til ca 30 bubilar, vogner og telt. Vi har delt plassen opp i 4 platå, slik at du alltid har god utsikt utover vatnet.</p>
+            <p>24 straumuttak, Saniteranlegg med dusj, wc og vaskerom.</p>
+            <p>Det er òg mogleg å leige vaskemaskin og tørketrommel. <br />Kr. 50 pr vask/tørk.</p>
+            <img src="@Url.Content("~/Content/images/IMG_7904.JPG")" alt="Oversikt av campingplassen"/>
+        </section>
+    </div>
+    <div class="hidden-xs col-sm-6">
+        <section class="content-section" id="contact">
+            @Html.Action("Form", "Contact")
+        </section>
+    </div>
+</div>
+
+
+
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+        <section id="fishing" class="content-section">
+            <h2>Fiske</h2>
+            <p>Frå Nesjartun har du gode mogligheitar til å fiske både i vatn, elv og sjø.</p>
+            <p>Vi sel fiskekort for Hornindalsvatnet/Stigedalen/Heggjadalen og øvre del av Eidselva, sone Nord/Vedvik.</p>
+            <p>For nærmare info om laksefiske i eidselva, sjå <a href="http://www.eidselva.no" target="_blank">www.eidselva.no</a></p>           
+        </section>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+        <section id="boat-rental" class="content-section">
+            <h2>Båtutleige</h2>
+            <p>På Nesjartun har du mulighet til å leige båt på Hornindalsvatnet.</p>
+            <p>Vi har tre motorbåtar, ein robåt og ein trøbåt.</p>
+        </section>
+    </div>
+</div>
+
+<section class="content-section visible-xs" id="contact">
+    @Html.Action("Form", "Contact")
+</section>
+
+
+

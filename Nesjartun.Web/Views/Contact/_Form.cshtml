@@ -1,0 +1,11 @@
+﻿@model Nesjartun.Models.ContactModel
+
+@using (Ajax.BeginForm("Submit", new AjaxOptions() { InsertionMode = InsertionMode.Replace, HttpMethod = "POST", UpdateTargetId = "contact" }))
+{
+    <fieldset>
+        <legend>Kontakt oss</legend>
+        @Html.AntiForgeryToken()
+        @Html.EditorForModel()
+        <input type="submit" value="Send inn" class="btn btn-success"/>
+    </fieldset>
+}

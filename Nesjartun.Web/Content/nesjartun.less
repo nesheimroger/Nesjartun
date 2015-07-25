@@ -1,0 +1,79 @@
+﻿@import "bootstrap/bootstrap.less";
+
+body{
+    padding: 20px 0;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+#header{
+    background-color: #fff;
+    color: #000;
+
+    img{
+        float: left;
+    }
+
+    .header-inner{
+        @media(min-width: @screen-sm-min){
+            margin-left: 150px;
+            margin-top: -10px;
+        }
+        @media(max-width: @screen-xs-max){
+            h1{
+                margin-top: 0;
+                padding-top: 0;
+            }
+        }
+        padding-bottom: 30px;
+    }
+
+    min-height: 190px;
+
+    
+}
+
+.content-section{
+        padding: 20px;
+        margin-bottom: 30px;
+
+        &.content-section-image{
+            padding: 0;
+            overflow: auto;
+        }
+
+        h2{
+            margin-top: 0;
+        }
+        h3{
+            margin-top: 5px;
+        }
+
+        &#cabins{
+            background-color: #EBEDC2;
+        }
+
+        &#camping{
+            background-color: #C2EDC6;
+        }
+
+        &#fishing{
+            background-color: #D8DCED;
+        }
+
+        &#boat-rental{
+            background-color: #E3E3E3;;
+        }
+
+}
+
+
+
