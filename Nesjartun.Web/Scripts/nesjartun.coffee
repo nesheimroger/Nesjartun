@@ -1,7 +1,7 @@
 ﻿# CoffeeScript
 (($, window) ->
 
-    equalizeHeights = () ->    
+    equalizeHeights = ->    
         
 
         rows = $('.row');
@@ -17,16 +17,27 @@
             
                 height = 0;
                 sections.each (index, sectionElement) =>
-                    sectionHeight = $(sectionElement).outerHeight()
-                    
+                    sectionHeight = $(sectionElement).height()
                     
                     if sectionHeight > height
                         height = sectionHeight;
+                        
                     return;
                 sections.height(height)
                 return;
                 
-    $(window).ready -> equalizeHeights(); return;
+    loadImages = (callback) ->
+        images = $('img[data-src]');
+        images.each (index, element) =>
+            tag = $(element)
+            src = tag.data('src')
+            $.get(src, ->
+                tag.attr('src', src)
+                setTimeout callback, 75
+                
+            )
+                
+    $(window).ready -> loadImages(equalizeHeights); return;
     $(window).resize -> equalizeHeights(); return;
     
     return;

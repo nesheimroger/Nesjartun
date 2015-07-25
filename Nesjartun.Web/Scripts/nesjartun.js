@@ -1,6 +1,6 @@
 ﻿(function() {
   (function($, window) {
-    var equalizeHeights;
+    var equalizeHeights, loadImages;
     equalizeHeights = function() {
       var rows;
       rows = $('.row');
@@ -17,7 +17,7 @@
             height = 0;
             sections.each(function(index, sectionElement) {
               var sectionHeight;
-              sectionHeight = $(sectionElement).outerHeight();
+              sectionHeight = $(sectionElement).height();
               if (sectionHeight > height) {
                 height = sectionHeight;
               }
@@ -27,8 +27,23 @@
         };
       })(this));
     };
+    loadImages = function(callback) {
+      var images;
+      images = $('img[data-src]');
+      return images.each((function(_this) {
+        return function(index, element) {
+          var src, tag;
+          tag = $(element);
+          src = tag.data('src');
+          return $.get(src, function() {
+            tag.attr('src', src);
+            return setTimeout(callback, 75);
+          });
+        };
+      })(this));
+    };
     $(window).ready(function() {
-      equalizeHeights();
+      loadImages(equalizeHeights);
     });
     $(window).resize(function() {
       equalizeHeights();
