@@ -1,10 +1,8 @@
 ﻿(function() {
   (function($, window) {
-    return $(window).ready(function() {
+    var equalizeHeights;
+    equalizeHeights = function() {
       var rows;
-      if (Modernizr.mq('(max-width: 767px)')) {
-        return;
-      }
       rows = $('.row');
       return rows.each((function(_this) {
         return function(index, rowElement) {
@@ -12,6 +10,10 @@
           row = $(rowElement);
           sections = row.find('.content-section');
           if (sections.length > 1) {
+            sections.height('auto');
+            if (Modernizr.mq('(max-width: 767px)')) {
+              return;
+            }
             height = 0;
             sections.each(function(index, sectionElement) {
               var sectionHeight;
@@ -24,6 +26,12 @@
           }
         };
       })(this));
+    };
+    $(window).ready(function() {
+      equalizeHeights();
+    });
+    $(window).resize(function() {
+      equalizeHeights();
     });
   })(jQuery, window);
 
