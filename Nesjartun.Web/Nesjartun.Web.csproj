@@ -142,7 +142,7 @@
   <ItemGroup>
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\gfx\fiskemann.png" />
-    <Content Include="Content\images\IMG_7904.JPG" />
+    <Content Include="Content\images\oversikt.png" />
     <Content Include="Content\nesjartun.css">
       <DependentUpon>nesjartun.less</DependentUpon>
     </Content>
